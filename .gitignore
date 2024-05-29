@@ -32,3 +32,6 @@ classes/
 
 # bloop
 .bloop/
+
+# VS Code
+.vscode/
