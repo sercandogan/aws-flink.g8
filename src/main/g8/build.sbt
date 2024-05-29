@@ -3,7 +3,7 @@ import sbt.Keys.javacOptions
 lazy val root = (project in file(".")).settings(
   name := "$name$",
   version := "$version$",
-  scalaVersion := "%scala_version%",
+  scalaVersion := "$scala_version$",
   mainClass := Some("src.scala.$organization$.$job$"),
   javacOptions ++= Seq("-source", "11", "-target", "11")
 )
