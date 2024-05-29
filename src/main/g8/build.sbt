@@ -11,7 +11,7 @@ lazy val root = project
     javacOptions ++= Seq("-source", "11", "-target", "11")
   )
 
-val jarName = "$name$-$version$.jar"
+val jarName = "$name;format="norm"$-$version$.jar"
 val flinkVersion = "1.18.1"
 val msfRuntimeVersion = "1.2.0"
 val connectorVersion = "4.2.0-1.18"
