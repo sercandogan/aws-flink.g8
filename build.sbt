@@ -3,6 +3,7 @@ lazy val root = project
   .enablePlugins(SbtPlugin)
   .settings(
     name := "aws-flink-template",
+    scalaVersion := "2.12.1",
     Test / test := {
       val _ = (Test / g8Test).toTask("").value
     },
