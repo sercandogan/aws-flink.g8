@@ -1,12 +1,15 @@
 import sbt.Keys.javacOptions
 
-lazy val root = (project in file(".")).settings(
-  name := "$name$",
-  version := "$version$",
-  scalaVersion := "$scala_version$",
-  mainClass := Some("src.scala.$organization$.$job$"),
-  javacOptions ++= Seq("-source", "11", "-target", "11")
-)
+lazy val root = project
+  .in(file("."))
+  .settings(
+    name := "$name$",
+    version := "$version$",
+    organization := "$organization$",
+    scalaVersion := "$scala_version$",
+    mainClass := Some("src.scala.$organization__packaged$.$name__Camel$"),
+    javacOptions ++= Seq("-source", "11", "-target", "11")
+  )
 
 val jarName = "$name$-$version$.jar"
 val flinkVersion = "1.18.1"
