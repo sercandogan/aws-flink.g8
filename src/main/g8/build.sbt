@@ -5,6 +5,7 @@ lazy val root = project
   .settings(
     name := "$name$",
     version := "$version$",
+    scalaVersion := "3.3.0",
     organization := "$organization$",
     assembly / mainClass := Some("$organization$.Job"),
     javacOptions ++= Seq("-source", "11", "-target", "11")
@@ -12,7 +13,6 @@ lazy val root = project
 
 val jarName = "$name$-$version$.jar"
 val flinkVersion = "1.18.1"
-val scalaVersion = "3.3.0"
 val msfRuntimeVersion = "1.2.0"
 val connectorVersion = "4.2.0-1.18"
 
