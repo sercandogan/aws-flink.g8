@@ -3,11 +3,11 @@ import sbt.Keys.javacOptions
 lazy val root = project
   .in(file("."))
   .settings(
-    name := "$name$",
+    name := "$name;format="norm"$",
     version := "$version$",
     scalaVersion := "3.3.0",
     organization := "$organization$",
-    assembly / mainClass := Some("$organization$.Job"),
+    assembly / mainClass := Some("$organization$.$name;format="norm"$.Job"),
     javacOptions ++= Seq("-source", "11", "-target", "11")
   )
 
