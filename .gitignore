@@ -29,6 +29,7 @@ classes/
 
 # metals
 .metals/
+metals.sbt
 
 # bloop
 .bloop/
